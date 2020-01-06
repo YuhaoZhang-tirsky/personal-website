@@ -1,0 +1,158 @@
+html {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #f5f5f5;
+  background-image: url(../image/main_bg.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 15px;
+  line-height: 1.6em;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+.site-header .header-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
+.name {
+  color: #49515d;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  box-sizing: border-box;
+  display: block;
+  text-align: left;
+  margin-top: 38px;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  float: left;
+}
+
+.name .lastname {
+  color: #2eca7f;
+}
+
+.nav-bar-list {
+  list-style: none;
+  float: right;
+  margin-top: 38px;
+}
+
+.nav-bar-list li {
+  display: inline;
+}
+
+.nav-bar-botton {
+  padding: 8px 0;
+  margin: 0 20px;
+  text-align: center;
+  color: #49515d;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  opacity: 0.6;
+}
+
+.nav-bar-botton:hover {
+  color: #2eca7f;
+  opacity: 1;
+  text-decoration: underline #2eca7f;
+}
+
+.mobile-visible {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile-hidden {
+    display: none;
+  }
+  .mobile-visible {
+    display: block;
+    visibility: visible;
+  }
+  .nav-bar {
+    background-color: #2eca7f;
+    height: 100% ;
+    width: 100%;
+   
+  }
+  .mobile-header {
+    background-color: #2eca7f;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    
+  }
+  .mobile-logo-container {
+    margin: 13px 20px;
+    text-align: left;
+    float: left;
+  }
+  .mobile-site-title {
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+  }
+  .icon-menu {
+    float: right;
+    margin: 12px 20px;
+    cursor: pointer;
+  }
+  .site-header {
+    height: calc(100% - 50px);
+    width: 320px;
+    max-width: 320px;
+    position: absolute;
+    right: 0;
+  }
+
+  .header-content {
+    height: 100%;
+    float: right;
+  }
+
+  .nav-bar-list {
+    background-color: #2eca7f;
+    width: 320px;
+    height: 100%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .nav-bar-list li {
+    display: block;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .nav-bar-botton {
+    color: white;
+    font-size: 15px;
+  }
+  .nav-bar-botton:hover {
+    color: white;
+    text-decoration: underline #ffffff;
+  }
+
+  .mobile-menu-hide {
+    display: block;
+  }
+}
