@@ -25,6 +25,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
+/* Header */
 .site-header .header-content {
   box-sizing: border-box;
   width: 100%;
@@ -49,6 +50,7 @@ a {
   color: #2eca7f;
 }
 
+/* Nav bar */
 .nav-bar-list {
   list-style: none;
   float: right;
@@ -79,17 +81,133 @@ a {
 }
 
 .mobile-visible {
-  visibility: hidden;
+  display: none;
+}
+/* /Header & /Nav bar */
+
+/* Home section */
+.subpages {
+  padding-top: 100px;
 }
 
+.section-inner{
+  max-width: 1032px;
+  margin: 0 auto;
+}
+
+.page-header {
+  position: relative;
+  background-color: #2eca7f;
+  border-radius: 15px 15px 0 0;
+  padding: 50px;
+  margin-bottom: 25px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.photo {
+  margin-bottom: -75px;
+  margin-left: 10px;
+  border: 2px solid #ffffff;
+  width: 275px;
+  height: 275px;
+  box-shadow: 0px 2px 5px gray;
+}
+
+.title-block {
+  display: inline-block;
+  text-align: center;
+  padding-top: 30px;
+  max-width: 641px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 20%;
+  left: 350px;
+}
+
+.linkedin {
+  height: 32px;
+  width: 32px;
+  padding-top: 10px;
+}
+
+.main-name {
+  font-size: 52px;
+  color: #ffffff;
+  margin: 30px 0;
+}
+
+.position {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.page-content {
+  background-color: #ffffff;
+  margin-top: -25px;
+  border-radius: 0 0 15px 15px;
+  padding: 50px;
+  box-shadow: 0px 2px 15px gray;
+
+}
+
+.introduction {
+  display: inline-block;
+  height: 100%;
+  width: 45%;
+  padding-left: 10px;
+}
+
+.about-me {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.about-me span {
+  color: #2eca7f
+}
+
+.detail-title {
+  display: inline-block;
+  position: relative;
+  top: -61px;
+  left: 80px;
+  font-weight: bold;
+}
+
+.detail {
+  display: inline-block;
+  position: relative;
+  top: -61px;
+  left: 120px;
+  color: gray;
+}
+
+.detail a, .detail a:visited {
+  color: #2eca7f;
+  text-decoration: none;
+}
+
+.detail a:hover{
+  color: orange;
+  text-decoration: none;
+}
+/* /Home section */
+
+/* Media queries */
 @media only screen and (max-width: 991px) {
   .mobile-hidden {
     display: none;
   }
+
   .mobile-visible {
     display: block;
-    visibility: visible;
   }
+
   .nav-bar {
     background-color: #2eca7f;
     height: 100% ;
@@ -108,16 +226,19 @@ a {
     text-align: left;
     float: left;
   }
+
   .mobile-site-title {
     display: inline-block;
     color: white;
     font-size: 18px;
   }
+
   .icon-menu {
     float: right;
     margin: 12px 20px;
     cursor: pointer;
   }
+
   .site-header {
     height: calc(100% - 50px);
     width: 320px;
@@ -138,15 +259,18 @@ a {
     margin-top: 50px;
     padding: 0;
   }
+
   .nav-bar-list li {
     display: block;
     text-align: center;
     padding: 15px 10px;
   }
+
   .nav-bar-botton {
     color: white;
     font-size: 15px;
   }
+
   .nav-bar-botton:hover {
     color: white;
     text-decoration: underline #ffffff;
