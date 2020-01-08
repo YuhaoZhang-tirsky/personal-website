@@ -98,6 +98,7 @@ footer {
   bottom: 2px;
   z-index: -1;
 }
+
 footer a, .detail a:visited {
   color: #2eca7f;
   text-decoration: none;
@@ -176,10 +177,20 @@ footer a:hover{
   left: 20px;
 }
 
+.social-link {
+  padding-top: 10px;
+}
 .linkedin {
   height: 32px;
   width: 32px;
+}
+
+.linkedin img{
+  height: 32px;
+  width: 32px;
   padding-top: 10px;
+  position: relative;
+  z-index: 9;
 }
 
 .main-name {
