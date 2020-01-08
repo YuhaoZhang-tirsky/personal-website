@@ -128,7 +128,7 @@ footer a:hover{
   margin-bottom: 25px; 
 }
 
-.page-header:after {
+.page-header:before {
   content:'';
   position: absolute;
   top: 0;
@@ -190,7 +190,7 @@ footer a:hover{
   width: 32px;
   padding-top: 10px;
   position: relative;
-  z-index: 9;
+  /* z-index: 9; */
 }
 
 .main-name {
@@ -225,7 +225,7 @@ footer a:hover{
 }
 
 .about-me span {
-  color: #2eca7f
+  color: #2eca7f;
 }
 
 .detail {
@@ -289,7 +289,7 @@ footer a:hover{
     height: 50px;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
   }
   .mobile-logo-container {
     margin: 13px 20px;
